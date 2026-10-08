@@ -4,7 +4,6 @@ use App\Http\Controllers\ExportController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
-// Route::inertia('/lista', 'Lista')->name('lista');
 
 Route::get('/', [UserController::class, 'index'])->name('usuarios.index');
 Route::resource('users', UserController::class)->only([
