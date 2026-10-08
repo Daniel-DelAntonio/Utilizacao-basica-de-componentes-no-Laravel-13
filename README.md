@@ -13,7 +13,7 @@ Abaixo estão os arquivos envolvidos na implementação da funcionalidade:
 │   └── exports.php                         # Configurações e presets de exportação
 ├── database/
 │   └── migrations/
-│       └── XXXX_XX_XX_add_user_fields.php  # Migration com novos campos de usuário
+│       └── 0001_0101_000000_create_users_table.php  # Migration com novos campos de usuário
 ├── app/
 │   ├── Models/
 │   │   └── User.php                        # Model de Usuário com $fillable atualizado
@@ -37,7 +37,7 @@ Abaixo estão os arquivos envolvidos na implementação da funcionalidade:
 ## 🛠️ Passo a Passo da Implementação
 
 ### 1. Migrações e Banco de Dados
-- **Arquivo:** `database/migrations/XXXX_XX_XX_add_user_fields.php`
+- **Arquivo:** `database/migrations/0001_0101_000000_create_users_table.php`
 - Adicione os campos `login`, `function_name` e `system_unit_id` à tabela `users`.
 - Execute o comando no terminal:
   ```bash
